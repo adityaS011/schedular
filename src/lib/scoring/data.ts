@@ -1,4 +1,18 @@
-import type { RedialInterval } from "./types";
+import { CallingDay, type GuardrailState, type RedialInterval } from "./types";
+
+// Level 1 — "everything at its best". Seeds the UI's initial state (score 100).
+export const OPTIMAL: GuardrailState = {
+  redialCount: 5,
+  redialInterval: 3,
+  callingWindow: { start: 8, end: 21 }, // 8 AM – 9 PM = 13h
+  callingDays: [
+    CallingDay.Monday,
+    CallingDay.Tuesday,
+    CallingDay.Wednesday,
+    CallingDay.Thursday,
+    CallingDay.Friday,
+  ],
+};
 
 export const REDIAL_COUNT_PENALTY: Record<number, number> = {
   0: -100,
