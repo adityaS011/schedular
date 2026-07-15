@@ -36,6 +36,9 @@ export const REDIAL_INTERVAL_PENALTY: Record<RedialInterval, number> = {
   24: -34,
 };
 
+// Ordered options for the interval segmented control.
+export const REDIAL_INTERVALS: RedialInterval[] = [3, 6, 9, 12, 24];
+
 export const DAYS_PENALTY: Record<number, number> = {
   1: -40,
   2: -30,
