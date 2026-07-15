@@ -30,6 +30,7 @@ export function RedialCard({
             min={0}
             max={10}
             step={1}
+
             value={state.redialCount}
             onValueChange={(v) => onChange({ redialCount: v as number })}
             ticks={[0, 2, 4, 6, 8, 10].map((v) => ({

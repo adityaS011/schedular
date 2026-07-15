@@ -16,7 +16,7 @@ export function SettingCard({
   return (
     <Card className={cn('gap-0 py-0 ', className)}>
       <CardHeader className=' bg-muted/40 px-6 py-2.5'>
-        <CardTitle className='text-sm font-medium  '>{title}</CardTitle>
+        <CardTitle className='text-sm font-semibold  '>{title}</CardTitle>
       </CardHeader>
       <CardContent className='border bg-card px-6 py-5 rounded-xl'>
         {children}

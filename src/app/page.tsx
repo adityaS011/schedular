@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <main className='flex h-dvh flex-col overflow-hidden'>
-      <header className='flex h-16 shrink-0 items-center border-b px-8 text-2xl font-semibold'>
+      <header className='flex h-16 shrink-0 items-center border-b px-8 text-[28px] font-bold'>
         Redial &amp; Guardrails
       </header>
 
