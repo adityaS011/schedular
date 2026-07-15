@@ -14,13 +14,13 @@ export function SettingCard({
   children: ReactNode;
 }) {
   return (
-    <Card className={cn('gap-0 py-0', className)}>
-      <CardHeader className="border-b bg-muted/40 py-3">
-        <CardTitle className="text-sm font-medium text-muted-foreground">
-          {title}
-        </CardTitle>
+    <Card className={cn('gap-0 py-0 ', className)}>
+      <CardHeader className=' bg-muted/40 px-6 py-2.5'>
+        <CardTitle className='text-sm font-medium  '>{title}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-6 py-5">{children}</CardContent>
+      <CardContent className='border bg-card px-6 py-5 rounded-xl'>
+        {children}
+      </CardContent>
     </Card>
   );
 }

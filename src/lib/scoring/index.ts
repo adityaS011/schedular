@@ -9,6 +9,13 @@ import { GuardrailState, ScoreResult, WeatherLevelType } from './types';
 export * from './types';
 export * from './data';
 
+const getLevel = (score: number): WeatherLevelType => {
+  if (score >= 82) return 1;
+  if (score >= 62) return 2;
+  if (score >= 42) return 3;
+  return 4;
+};
+
 export const scoreGuardrails = ({
   redialCount,
   redialInterval,
@@ -27,12 +34,6 @@ export const scoreGuardrails = ({
     100 + redialPenalty + intervalPenalty + daysPenalty + windowPenalty,
   );
 
-  const getLevel = (score: number): WeatherLevelType => {
-    if (score >= 82) return 1;
-    if (score >= 62) return 2;
-    if (score >= 42) return 3;
-    return 4;
-  };
   const weatherLevel = getLevel(score);
 
   return {

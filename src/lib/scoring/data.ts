@@ -1,4 +1,9 @@
-import { CallingDay, type GuardrailState, type RedialInterval } from "./types";
+import {
+  CallingDay,
+  type GuardrailState,
+  type RedialInterval,
+  type WeatherLevelType,
+} from './types';
 
 // Level 1 — "everything at its best". Seeds the UI's initial state (score 100).
 export const OPTIMAL: GuardrailState = {
@@ -61,4 +66,12 @@ export const WINDOW_PENALTY: Record<number, number> = {
   11: 0,
   12: 0,
   13: 0,
+};
+
+// One illustration per weather level — clearer at level 1, stormier at level 4.
+export const LEVEL_IMAGE: Record<WeatherLevelType, string> = {
+  1: '/weather/level-1.png',
+  2: '/weather/level-2.png',
+  3: '/weather/level-3.png',
+  4: '/weather/level-4.png',
 };

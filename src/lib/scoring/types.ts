@@ -1,14 +1,14 @@
 export enum CallingDay {
-  Monday = "Mon",
-  Tuesday = "Tue",
-  Wednesday = "Wed",
-  Thursday = "Thu",
-  Friday = "Fri",
-  Saturday = "Sat",
-  Sunday = "Sun",
+  Monday = 'Mon',
+  Tuesday = 'Tue',
+  Wednesday = 'Wed',
+  Thursday = 'Thu',
+  Friday = 'Fri',
+  Saturday = 'Sat',
+  Sunday = 'Sun',
 }
 
-export interface CallingWindow  {
+export interface CallingWindow {
   start: number;
   end: number;
 }
