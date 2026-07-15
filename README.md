@@ -1,5 +1,7 @@
 # Redial & Guardrails
 
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/c8dfc83d-d0e2-40c8-b775-c7037f4a348d" />
+
 A small Next.js app for configuring a calling campaign's **redial** and **guardrail**
 settings and seeing a live **campaign score** as you adjust them.
 
